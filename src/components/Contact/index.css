@@ -1,0 +1,128 @@
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2980b9;
+}
+
+.submit-button {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.joke-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #2c3e50;
+  font-style: italic;
+}
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .joke-text {
+    font-size: 0.9rem;
+  }
+}
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Add this background image */
+  background-image: url("https://wallpapercave.com/wp/wp1912949.png");
+
+  /* Make sure it covers the whole area */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Add a semi-transparent color on top to make text readable */
+  background-color: rgba(44, 62, 80, 0.6);
+
+  /* Combine the color and image with a gradient overlay */
+  background-blend-mode: overlay;
+}

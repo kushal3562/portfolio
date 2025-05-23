@@ -1,0 +1,170 @@
+.about-container {
+  min-height: 100vh; 
+  background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-me {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about-intro {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.info-sections {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.education-section {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  flex: 1;
+  min-width: 280px;
+}
+
+.hobbies-section {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  flex: 1;
+  min-width: 280px;
+}
+
+.heading {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.education-list {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.hobbies-list {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list_item {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.points {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-me {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .info-sections {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-section,
+  .hobbies-section {
+    min-width: 100%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .list_item,
+  .points {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
