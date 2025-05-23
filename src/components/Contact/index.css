@@ -3,9 +3,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
   padding: 40px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Background image + overlay */
+  background-image: url("https://wallpapercave.com/wp/wp1912949.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay with semi-transparent dark color */
+  background-color: rgba(44, 62, 80, 0.6);
+  background-blend-mode: overlay;
+
+  /* Add some smoothness for smaller screens */
+  transition: background-color 0.3s ease;
 }
 
 .contact-form {
@@ -77,21 +89,23 @@
   color: #2c3e50;
   font-style: italic;
 }
-@media (max-width: 480px) {
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .contact-form {
-    padding: 20px;
-    max-width: 100%;
-    box-shadow: none;
-    border-radius: 12px;
+    padding: 30px 20px;
+    max-width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   }
 
   .form-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .form-group input,
   .form-group textarea {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding: 10px;
   }
 
@@ -101,28 +115,35 @@
   }
 
   .joke-text {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
-.contact-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  /* Add this background image */
-  background-image: url("https://wallpapercave.com/wp/wp1912949.png");
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px 15px;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 12px;
+  }
 
-  /* Make sure it covers the whole area */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  .form-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 
-  /* Add a semi-transparent color on top to make text readable */
-  background-color: rgba(44, 62, 80, 0.6);
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
 
-  /* Combine the color and image with a gradient overlay */
-  background-blend-mode: overlay;
+  .submit-button {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+
+  .joke-text {
+    font-size: 0.9rem;
+  }
 }

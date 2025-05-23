@@ -40,18 +40,12 @@ const About = () => {
           </div>
         </div>
 
-        
-        <button class="button">
-            <span class="button-content" onClick={handleNext}>NEXT </span>
-              </button>
+        <button className="button" onClick={handleNext}>
+          <span className="button-content">NEXT</span>
+        </button>
       </div>
     </div>
   );
 };
 
 export default About;
-
-
-
-
-

@@ -42,7 +42,7 @@ const Skills = () => {
 
         <div className="buttons-group">
           <button className="button" onClick={handleNext}>
-            <span className="button-content">Go to Projects</span>
+            Go to Projects
           </button>
         </div>
       </div>
@@ -51,6 +51,5 @@ const Skills = () => {
 };
 
 export default Skills;
-
 
 

@@ -1,12 +1,24 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
 .skills-container {
   min-height: 100vh;
-  background-image: url("https://c8.alamy.com/comp/2DEDDK2/web-design-inscription-against-laptop-and-code-background-learn-web-design-computer-courses-training-2DEDDK2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px 20px;
 }
 
@@ -14,7 +26,7 @@
   background-color: rgba(0, 0, 0, 0.65);
   padding: 40px;
   border-radius: 15px;
-  font-family: Franklin Gothic Medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100%;
   max-width: 850px;
   color: #ffffff;
@@ -22,7 +34,7 @@
 }
 
 .skills-heading {
-  font-family: Rockwell;
+  font-family: 'Rockwell', 'Courier New', monospace;
   font-size: 3rem;
   text-align: center;
   color: #ffd700;
@@ -31,7 +43,7 @@
 
 .skills-subheading {
   font-size: 1.8rem;
-  font-family: Rockwell;
+  font-family: 'Rockwell', 'Courier New', monospace;
   color: #d13615;
   margin-bottom: 15px;
 }
@@ -39,14 +51,13 @@
 .skills-list {
   list-style: disc;
   padding-left: 20px;
-  
   margin-bottom: 30px;
 }
 
 .skill-item {
   font-size: 1.1rem;
   margin-bottom: 8px;
-  color: #e60ded ;
+  color: #e60ded;
 }
 
 .buttons-group {
@@ -71,6 +82,8 @@
   background-color: #ff6347;
   transform: scale(1.05);
 }
+
+/* Responsive */
 @media (max-width: 900px) {
   .skills-content {
     padding: 30px 20px;

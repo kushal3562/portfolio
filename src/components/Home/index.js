@@ -13,7 +13,7 @@ const Home = () => {
     <div className="home-container">
       <div className="home-left">
         <img
-          src="https://i.postimg.cc/mg9g8v8R/2f668866-31a8-48d9-953f-8fba82ea6f18.jpg"
+          src="https://i.postimg.cc/RZxnSSXV/Whats-App-Image-2025-05-22-at-23-51-32-d016c403.jpg"
           alt="Profile"
           className="profile-image"
         />
@@ -23,7 +23,7 @@ const Home = () => {
         <p className="paragraph">
           Front-End Developer | React.js | HTML | CSS | JavaScript
         </p>
-        <button className="enter-button" onClick={handleEnter}>
+        <button className="enter-button" onClick={handleEnter} aria-label="Enter Portfolio">
           Enter Portfolio
         </button>
       </div>
