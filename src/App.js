@@ -7,23 +7,23 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactPage from "./components/Contact";
+import Practice from "./components/Practice";  // <-- Added Practice import
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/* Home routes */}
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Home />} />
 
-        {/* Other sections */}
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactPage />} />
 
-        {/* Optional: catch-all redirect to Home */}
+        <Route path="/coding-practice" element={<Practice />} /> {/* <-- Added Practice route */}
+
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

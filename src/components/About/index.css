@@ -25,6 +25,7 @@
   font-size: 2.8rem;
   margin-bottom: 10px;
   color: white;
+  text-decoration: underline;
 }
 
 .about-intro {
@@ -49,6 +50,8 @@
 .heading {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: white;
+  text-decoration: underline;
 }
 
 .education-list,

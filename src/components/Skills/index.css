@@ -37,14 +37,15 @@ body {
   font-family: 'Rockwell', 'Courier New', monospace;
   font-size: 3rem;
   text-align: center;
-  color: #ffd700;
+  color: #f58504;
   margin-bottom: 30px;
 }
 
 .skills-subheading {
   font-size: 1.8rem;
   font-family: 'Rockwell', 'Courier New', monospace;
-  color: #d13615;
+  color: #fff;
+  text-decoration: underline;
   margin-bottom: 15px;
 }
 
@@ -57,7 +58,7 @@ body {
 .skill-item {
   font-size: 1.1rem;
   margin-bottom: 8px;
-  color: #e60ded;
+  color: wheat;
 }
 
 .buttons-group {

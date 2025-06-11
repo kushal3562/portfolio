@@ -1,0 +1,108 @@
+/* Reset margin/padding and full size for html, body, root */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Georgia', serif; /* Classic font */
+  background: #000; /* fallback background color */
+}
+
+/* Container with full viewport size and background image */
+.practice-container {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title styling */
+.practice-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+/* Intro paragraph */
+.practice-intro {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+/* Project list as a grid with 3 columns */
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each project item card */
+.practice-item {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.practice-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+}
+
+/* Link styling inside project item */
+.practice-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+/* Project title */
+.practice-link h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+/* Project description */
+.practice-link p {
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+}
+
+/* Responsive text sizing */
+@media (max-width: 480px) {
+  .practice-title {
+    font-size: 2rem;
+  }
+  .practice-intro {
+    font-size: 1rem;
+  }
+}
+
+.fetch{
+  padding-top: 40px;
+}

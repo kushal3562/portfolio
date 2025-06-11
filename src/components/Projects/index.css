@@ -37,7 +37,7 @@ html {
   font-size: 3rem;
   margin-bottom: 40px;
   text-decoration: underline;
-  color: #fff;
+  color: color-mix(in srgb, orange 50%, red 50%);
   text-align: center;
   max-width: 100%;
   word-break: break-word;

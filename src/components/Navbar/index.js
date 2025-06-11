@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-      {/* Logo */}
+      
       <div className="navbar-logo">
         <img
           src="https://i.postimg.cc/W329NVJm/Screenshot-2025-05-23-205049.png"
@@ -16,13 +16,15 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Navigation Links */}
+      
       <ul className="nav-list">
         <li><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li>
         <li><NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink></li>
         <li><NavLink to="/skills" className={({ isActive }) => (isActive ? "active" : "")}>Skills</NavLink></li>
         <li><NavLink to="/projects" className={({ isActive }) => (isActive ? "active" : "")}>Projects</NavLink></li>
         <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink></li>
+        <li><NavLink to="/coding-practice" className={({ isActive }) => (isActive ? "active" : "")}>CodingPractice</NavLink></li>
+                                                               
       </ul>
 
       {/* Social Links */}
